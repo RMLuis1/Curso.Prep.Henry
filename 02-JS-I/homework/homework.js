@@ -1,13 +1,13 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'martin';
+const nuevaString ="Es una string!" ;
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 26;
+const nuevoNum = 1234 ;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = true ;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
- return srt;
+ return  str;
 }
 
 function suma(x, y) {
@@ -41,7 +41,8 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-    return y - x;
+    let resta= x - y;
+    return resta 
 }
 
 function multiplica(x, y) {
@@ -70,7 +71,9 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return stri1.length === str2.length;
+  if (str1.length === str2.length){
+     return true }
+     else return false  
 }
 
 function menosQueNoventa(num) {
@@ -92,7 +95,8 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % y;
+  let resto= x % y
+  return resto ;
 }
 
 function esPar(num) {
@@ -107,8 +111,9 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 === 0) return false;
-  else return true;
+  if (num % 2 === 1 ) {
+    return true ; }
+  else return false;
 }
 
 function elevarAlCuadrado(num) {
@@ -133,19 +138,19 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return math.round (num);
+  return Math.round(num) ;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return math.ceil (num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.random();
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -153,15 +158,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-let signo = math.sign(numero);
+let signo = Math.sign(numero);
 if (signo === 1) {
   return 'Es positivo';
 }
-else if (signo === -1){
+if (signo === -1){
   return 'Es negativo'
 } 
-else {
-  return false;
+else if (signo === 0) {
+return false;
 }
 }
 
@@ -169,7 +174,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-return str + '!':
+return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
@@ -183,7 +188,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola' + nombre + '!'; 
+  return 'Hola ' + nombre + '!'; 
 }
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
@@ -222,16 +227,14 @@ function esVocal(letra){
   //Escribe tu código aquí
   let esvocal = letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u';
   let longitudcorrecta = letra.length > 1;
-  if (esvocal); {
-    return 'esvocal';
+  if (esvocal) {
+    return 'Es vocal';
   } 
-  else if (longitudcorrecta); {
-    return 'dato incorrecto';
+   if (longitudcorrecta) {
+    return 'Dato incorrecto';
   }
-  return 'dato incorrecto';
+  return 'Dato incorrecto';
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
